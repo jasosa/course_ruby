@@ -9,3 +9,5 @@ class Coursera
 		get("", query: { query: term})["elements"]
 	end
 end
+
+
