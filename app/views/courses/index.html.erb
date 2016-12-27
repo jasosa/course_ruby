@@ -1,5 +1,10 @@
 <h1>Searching for - <%= @search_term %> </h1>
 
+<% if @courses.nil? %>
+
+<p>No courses find with relevant information... Sorry</p>
+
+<% else %>
 <table border="1">
 	<tr>
 		<th>Image</th>
@@ -14,4 +19,5 @@
 		</tr>
 	<% end %>
 </table>
+<% end %>
 
